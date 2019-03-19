@@ -14,15 +14,14 @@
 Route::get('/', function () {
     return view('welcome');
 });
-// Route::get('login', 'PageController@getLogin');
-// Route::post('login', 'PageController@login');
+Route::get('login', 'PageController@getLogin');
+Route::post('login', 'PageController@postLogin');
 
-// Route::get('login', 'PageController@login');
-// Route::get('login', 'PageController@login');
+Route::get('register', 'PageController@getRegister');
+Route::post('register', 'PageController@postRegister');
 
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
+// Auth::routes();
+// Route::get('/home', 'HomeController@index')->name('home');
 
 
 // php artisan make:auth
