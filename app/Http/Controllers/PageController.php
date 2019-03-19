@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\User;
 use Validator;
 use Hash;
+use Auth;
 
 class PageController extends Controller
 {
@@ -13,16 +14,15 @@ class PageController extends Controller
         return view('user.login');
     }
     function postLogin(Request $req){
-        $email = $req->email;
+        $username = $req->username;
         $password = $req->password;
-        // $req->only('email','password');
-        if(Auth::attempt(['email'=>$email,'password'=>$password])){
-            // $user = Auth::user();
-            // dd($user);
+        // dd($req->only('email','password'));
+        if(\Auth::attempt(['username'=>$username,'password'=>$password])){
             return redirect('/');
         }
         else{
-            echo 'khong tim thay';
+            return redirect()->route('login')
+                    ->with('error','Login fail!!');
         }
         
     } 
