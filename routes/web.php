@@ -11,14 +11,21 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
 Route::get('login', 'PageController@getLogin')->name('login');
 Route::post('login', 'PageController@postLogin');
 
 Route::get('register', 'PageController@getRegister');
 Route::post('register', 'PageController@postRegister');
+
+Route::group(['middleware'=>'auth'],function(){
+    Route::get('logout','PageController@logout');
+    Route::get('/','PageController@index');
+});
+
+
+
+
+
 
 // Auth::routes();
 // Route::get('/home', 'HomeController@index')->name('home');

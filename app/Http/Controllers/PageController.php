@@ -10,6 +10,13 @@ use Auth;
 
 class PageController extends Controller
 {
+    function logout(){
+        Auth::logout();
+        return redirect('login');
+    }
+    function index(){
+        return view('pages.home');
+    }
     function getLogin(){
         return view('user.login');
     }

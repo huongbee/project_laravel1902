@@ -4,3 +4,9 @@
 div#register-form{
     max-width: 500px;
 }
+.site-footer{
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    z-index: -1;
+}
