@@ -14,7 +14,7 @@
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('login', 'PageController@getLogin');
+Route::get('login', 'PageController@getLogin')->name('login');
 Route::post('login', 'PageController@postLogin');
 
 Route::get('register', 'PageController@getRegister');

@@ -9,7 +9,9 @@
     <meta name="keyword" content="FlatLab, Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
     <link rel="shortcut icon" href="img/favicon.html">
 
-    <title>FlatLab - Flat & Responsive Bootstrap Admin Template</title>
+    <title>
+        @yield('title')
+    </title>
 
     <!-- Bootstrap core CSS -->
     <link href="admin-master/css/bootstrap.min.css" rel="stylesheet">
@@ -20,7 +22,7 @@
     <link rel="stylesheet" href="admin-master/css/owl.carousel.css" type="text/css">
     <link href="admin-master/css/style-responsive.css" rel="stylesheet" />
     <link href="admin-master/css/login-form.css" rel="stylesheet">
-    
+
     <link href="admin-master/css/my-style.css" rel="stylesheet">
 </head>
 
