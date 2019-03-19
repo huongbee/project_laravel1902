@@ -1,0 +1,6 @@
+.form-signin input[type=date]{
+    margin-bottom: 10px
+}
+div#register-form{
+    max-width: 500px;
+}

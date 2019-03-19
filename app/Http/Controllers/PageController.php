@@ -9,4 +9,7 @@ class PageController extends Controller
     function getLogin(){
         return view('user.login');
     }
+    function getRegister(){
+        return view('user.register');
+    }
 }

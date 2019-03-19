@@ -18,14 +18,10 @@
     <link href="admin-master/assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
     <link href="admin-master/assets/jquery-easy-pie-chart/jquery.easy-pie-chart.css" rel="stylesheet" type="text/css" media="screen"/>
     <link rel="stylesheet" href="admin-master/css/owl.carousel.css" type="text/css">
-
     <link href="admin-master/css/style-responsive.css" rel="stylesheet" />
     <link href="admin-master/css/login-form.css" rel="stylesheet">
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 tooltipss and media queries -->
-    <!--[if lt IE 9]>
-      <script src="admin-master/js/html5shiv.js"></script>
-      <script src="admin-master/js/respond.min.js"></script>
-    <![endif]-->
+    
+    <link href="admin-master/css/my-style.css" rel="stylesheet">
 </head>
 
   <body>
