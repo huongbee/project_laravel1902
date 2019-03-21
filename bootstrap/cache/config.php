@@ -409,16 +409,16 @@
   'mail' => 
   array (
     'driver' => 'smtp',
-    'host' => 'smtp.mailtrap.io',
-    'port' => '2525',
+    'host' => 'smtp.gmail.com',
+    'port' => '587',
     'from' => 
     array (
-      'address' => 'hello@example.com',
-      'name' => 'Example',
+      'address' => 'huonghuong08.php@gmail',
+      'name' => 'Admin 1902',
     ),
-    'encryption' => NULL,
-    'username' => NULL,
-    'password' => NULL,
+    'encryption' => 'tls',
+    'username' => 'huonghuong08.php@gmail.com',
+    'password' => 'qweasd@@',
     'sendmail' => '/usr/sbin/sendmail -bs',
     'markdown' => 
     array (

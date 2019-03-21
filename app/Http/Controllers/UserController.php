@@ -7,9 +7,25 @@ use App\User;
 use Validator;
 use Hash;
 use Auth;
+use Mail;
 
 class UserController extends Controller
 {
+    function sendMailForgetpassword(Request $req){
+        //validate
+        $user = User::where('email',$req->email)->first();
+        if($user){
+            //send mail
+            Mail::send('user.mail-content', ['user' => $user], function ($message) use($user){
+                $message->from('huonghuong08.php@gmail.com', 'Admin 1902');
+                $message->to($user->email,$user->fullname);
+                $message->subject('Admin 1902 Reset Password');
+            });
+            echo 'đã gửi';
+        }
+        else return redirect()->back()->with('error','Cannot find user');
+    }
+
     function getForgetPassword(){
         return view('user.forget-password');
     }

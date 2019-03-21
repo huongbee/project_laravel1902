@@ -15,7 +15,7 @@
         
         <button class="btn btn-lg btn-primary btn-block btn-signin" type="submit" name="login">Sign in</button>
     </form><!-- /form -->
-    <a href="#" class="forgot-password">
+    <a href="forget-password" class="forgot-password">
         Forgot the password?
     </a>
 </div><!-- /card-container -->

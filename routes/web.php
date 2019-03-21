@@ -18,7 +18,7 @@ Route::get('register', 'UserController@getRegister');
 Route::post('register', 'UserController@postRegister');
 
 Route::get('forget-password', 'UserController@getForgetPassword');
-
+Route::post('send-email-forgetpassword','UserController@sendMailForgetpassword');
 
 Route::group(['middleware'=>'auth'],function(){
     Route::get('logout','UserController@logout');
