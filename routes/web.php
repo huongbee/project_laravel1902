@@ -11,14 +11,17 @@
 |
 */
 
-Route::get('login', 'PageController@getLogin')->name('login');
-Route::post('login', 'PageController@postLogin');
+Route::get('login', 'UserController@getLogin')->name('login');
+Route::post('login', 'UserController@postLogin');
 
-Route::get('register', 'PageController@getRegister');
-Route::post('register', 'PageController@postRegister');
+Route::get('register', 'UserController@getRegister');
+Route::post('register', 'UserController@postRegister');
+
+Route::get('forget-password', 'UserController@getForgetPassword');
+
 
 Route::group(['middleware'=>'auth'],function(){
-    Route::get('logout','PageController@logout');
+    Route::get('logout','UserController@logout');
     Route::get('/','PageController@index');
 });
 
