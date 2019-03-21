@@ -11,6 +11,9 @@ use Mail;
 
 class UserController extends Controller
 {
+    function getResetPassword(){
+        return view('user.reset-password');
+    }
     function sendMailForgetpassword(Request $req){
         //validate
         $user = User::where('email',$req->email)->first();
@@ -21,7 +24,7 @@ class UserController extends Controller
                 $message->to($user->email,$user->fullname);
                 $message->subject('Admin 1902 Reset Password');
             });
-            echo 'đã gửi';
+            return redirect()->back()->with('success','Check your email to reset password');
         }
         else return redirect()->back()->with('error','Cannot find user');
     }
