@@ -1,4 +1,3 @@
-<?php /* /Users/admin/Desktop/project_laravel1902/resources/views/user/master.blade.php */ ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -13,7 +12,7 @@
     <title>
         <?php echo $__env->yieldContent('title'); ?>
     </title>
-
+    <base href="<?php echo e(asset('')); ?>">
     <!-- Bootstrap core CSS -->
     <link href="admin-master/css/bootstrap.min.css" rel="stylesheet">
     <link href="admin-master/css/bootstrap-reset.css" rel="stylesheet">
@@ -37,3 +36,5 @@
     
   </body>
 </html>
+
+<?php /* /Users/admin/Desktop/project_laravel1902/resources/views/user/master.blade.php */ ?>

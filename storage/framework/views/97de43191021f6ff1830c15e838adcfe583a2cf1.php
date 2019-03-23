@@ -1,4 +1,3 @@
-<?php /* /Users/admin/Desktop/project_laravel1902/resources/views/user/login.blade.php */ ?>
 <?php $__env->startSection('title','Login'); ?>
 <?php $__env->startSection('content'); ?>
 <div class="card card-container">
@@ -19,6 +18,11 @@
     <a href="forget-password" class="forgot-password">
         Forgot the password?
     </a>
+    <br>
+    <a href="login/google" class="forgot-password">
+       Login by Google
+    </a>
 </div><!-- /card-container -->
 <?php $__env->stopSection(); ?>
 <?php echo $__env->make('user.master', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
+<?php /* /Users/admin/Desktop/project_laravel1902/resources/views/user/login.blade.php */ ?>

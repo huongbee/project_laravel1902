@@ -12,7 +12,7 @@
     <title>
         @yield('title')
     </title>
-
+    <base href="{{asset('')}}">
     <!-- Bootstrap core CSS -->
     <link href="admin-master/css/bootstrap.min.css" rel="stylesheet">
     <link href="admin-master/css/bootstrap-reset.css" rel="stylesheet">

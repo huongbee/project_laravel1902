@@ -40,6 +40,7 @@
       23 => 'App\\Providers\\AuthServiceProvider',
       24 => 'App\\Providers\\EventServiceProvider',
       25 => 'App\\Providers\\RouteServiceProvider',
+      26 => 'Laravel\\Socialite\\SocialiteServiceProvider',
     ),
     'aliases' => 
     array (
@@ -78,6 +79,7 @@
       'URL' => 'Illuminate\\Support\\Facades\\URL',
       'Validator' => 'Illuminate\\Support\\Facades\\Validator',
       'View' => 'Illuminate\\Support\\Facades\\View',
+      'Socialite' => 'Laravel\\Socialite\\Facades\\Socialite',
     ),
   ),
   'auth' => 
@@ -510,6 +512,18 @@
         'secret' => NULL,
         'tolerance' => 300,
       ),
+    ),
+    'google' => 
+    array (
+      'client_id' => '696025184931-i20vhlp6vh53dukdvu6v1372chauoebs.apps.googleusercontent.com',
+      'client_secret' => 'o0JzNvdErpTN1j20SJc5I13A',
+      'redirect' => 'http://localhost:8000/login/google/callback',
+    ),
+    'facebook' => 
+    array (
+      'client_id' => '417466905705425',
+      'client_secret' => '5730c486b79856eed7009f4ffa6a16a0',
+      'redirect' => 'http://localhost:8000/login/facebook/callback',
     ),
   ),
   'session' => 

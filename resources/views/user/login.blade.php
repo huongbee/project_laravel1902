@@ -18,5 +18,9 @@
     <a href="forget-password" class="forgot-password">
         Forgot the password?
     </a>
+    <br>
+    <a href="login/google" class="forgot-password">
+       Login by Google
+    </a>
 </div><!-- /card-container -->
 @endsection

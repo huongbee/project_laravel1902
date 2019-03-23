@@ -20,16 +20,19 @@ Route::post('register', 'UserController@postRegister');
 Route::get('forget-password', 'UserController@getForgetPassword');
 Route::post('send-email-forgetpassword','UserController@sendMailForgetpassword');
 
-Route::get('reset-password', 'UserController@getResetPassword');
+Route::get('reset-password/{token}', 'UserController@getResetPassword');
+Route::post('reset-password', 'UserController@postResetPassword');
+
+
+Route::get('login/{provider}', 'UserController@redirectToProvider');
+Route::get('login/{provider}/callback', 'UserController@handleProviderCallback'); /// ***
+
 
 
 Route::group(['middleware'=>'auth'],function(){
     Route::get('logout','UserController@logout');
     Route::get('/','PageController@index');
 });
-
-
-
 
 
 

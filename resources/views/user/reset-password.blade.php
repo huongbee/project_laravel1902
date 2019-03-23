@@ -14,13 +14,13 @@
             </div>
         </div>
     </div>
-    <form class="form-signin" method="post" action="send-email-forgetpassword">
+    <form class="form-signin" method="post" action="reset-password">
         @csrf
-        <input type="email" name="email" class="form-control" placeholder="Enter email" value="" readonly required>
+        <input type="email" name="email" class="form-control" placeholder="Enter email" value="{{$email}}" readonly required>
 
         <input type="password" name="password" class="form-control" placeholder="Enter password" required>
 
-        <input type="password" name="password_comfirmation" class="form-control" placeholder="Enter confirmmation password" required>
+        <input type="password" name="password_confirmation" class="form-control" placeholder="Enter confirmation password" required>
         
         <button class="btn btn-lg btn-primary btn-block btn-signin" type="submit" name="login">Reset</button>
     </form><!-- /form -->
